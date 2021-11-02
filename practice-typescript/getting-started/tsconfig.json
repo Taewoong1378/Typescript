@@ -1,0 +1,8 @@
+// 컴파일 옵션 설정
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noImplicitAny": true
+  }
+}
