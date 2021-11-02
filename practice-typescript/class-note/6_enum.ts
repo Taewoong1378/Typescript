@@ -1,6 +1,6 @@
 enum Shoes {
   Nike,
-  Adidas
+  Adidas,
 }
 
 let Nike = Shoes.Nike;
@@ -11,7 +11,7 @@ console.log(Adidas); // 1이 출력된다.
 
 enum NewShoes {
   Nike = '나이키',
-  Adidas = '아디다스'
+  Adidas = '아디다스',
 }
 
 // 예제
