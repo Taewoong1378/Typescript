@@ -109,4 +109,12 @@ class AddressBook {
   /* ------------------------------------------------ */
 }
 
+let div = document.querySelector('div') as HTMLDivElement;
+// 만약 위처럼 타입 단언을 통해 HTMLdivElemen가 존재할 것이라고 해주지 않는다면,
+// Ts에서 div.innerText; -> div는 null일수도 있고, div 태그를 가리킬 수도 있다고 추론함.
+// 따라서 위처럼 타입 단언을 해주거나 아래처럼 if문을 통해 div가 존재한다는 것을 TS에서 확인시켜줘야함
+if (div) {
+  div.innerText;
+}
+
 new AddressBook();
